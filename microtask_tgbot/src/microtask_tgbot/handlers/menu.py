@@ -1,8 +1,8 @@
 from aiogram import Router, F
 from aiogram.types import CallbackQuery
 from aiogram.fsm.context import FSMContext
-from keyboards.main_manu import get_main_menu, get_task_menu, get_settings_menu
-from states.user_states import MenuStates
+from src.microtask_tgbot.keyboards.main_manu import get_main_menu, get_task_menu, get_settings_menu
+from src.microtask_tgbot.states.user_states import MenuStates
 
 router = Router(name="menu")
 

@@ -2,8 +2,8 @@ from aiogram import Router
 from aiogram.types import Message
 from aiogram.filters import CommandStart
 from aiogram.fsm.context import FSMContext
-from keyboards.main_menu import get_main_menu
-from states.user_states import MenuStates
+from src.microtask_tgbot.keyboards.main_menu import get_main_menu
+from src.microtask_tgbot.states.user_states import MenuStates
 
 router = Router(name="start")
 
