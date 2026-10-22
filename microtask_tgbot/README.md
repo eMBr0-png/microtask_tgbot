@@ -27,9 +27,3 @@ A Telegram bot for managing daily microtasks with statistics and scheduling capa
 The bot requires a `.env` file with the following variables:
 - `BOT_TOKEN`: Telegram bot API token
 - `DB_URL`: PostgreSQL database connection URL
-
-Example `.env`:
-```
-BOT_TOKEN=8932673646:AAH_peJ8ugnvLTtXL7-ep0FP9nY6D4DII3E
-DB_URL=postgresql+asyncpg://neondb_owner:npg_egvxPqXI96oy@ep-hidden-violet-b40f8eq8-pooler.c-6.us-east-2.aws.neon.tech/microtask_bot_db
-```
