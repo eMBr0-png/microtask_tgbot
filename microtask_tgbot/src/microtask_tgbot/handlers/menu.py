@@ -1,12 +1,12 @@
 from aiogram import Router, F
 from aiogram.types import CallbackQuery
 from aiogram.fsm.context import FSMContext
-from src.microtask_tgbot.keyboards.main_manu import get_main_menu, get_task_menu, get_settings_menu
+from src.microtask_tgbot.keyboards.main_menu import get_main_menu, get_task_menu, get_settings_menu
 from src.microtask_tgbot.states.user_states import MenuStates
 
 router = Router(name="menu")
 
-@router.callbackquery(F.data == "menu:main")
+@router.callback_query(F.data == "menu:main")
 async def show_main_menu(callback: CallbackQuery, state: FSMContext):
     await state.set_state(MenuStates.main_menu)
     await callback.message.edit_text(
