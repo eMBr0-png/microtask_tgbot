@@ -25,7 +25,7 @@ def get_task_menu() -> InlineKeyboardMarkup:
 def get_settings_menu() -> InlineKeyboardMarkup:
     builder = InlineKeyboardBuilder()
 
-    builder.button(text="Время для задачи", callback_data="menu:settings")
+    builder.button(text="Время для задачи", callback_data="menu:time")
     builder.button(text="Назад", callback_data="menu:main")
 
     builder.adjust(1)

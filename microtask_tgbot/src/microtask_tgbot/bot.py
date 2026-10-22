@@ -1,8 +1,8 @@
 from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
-from src.microtask_tgbot.config import settings
-from src.microtask_tgbot.handlers import start
+from microtask_tgbot.config import settings
+from microtask_tgbot.handlers import start, menu
 import socket
 from aiohttp import TCPConnector
 from aiogram.client.session.aiohttp import AiohttpSession
@@ -19,5 +19,6 @@ async def main():
     dp = Dispatcher()
 
     dp.include_router(start.router)
+    dp.include_router(menu.router)
 
     await dp.start_polling(bot)
